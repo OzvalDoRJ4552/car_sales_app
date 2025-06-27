@@ -38,5 +38,10 @@ with tab2:
     st.plotly_chart(fig, use_container_width=True)
 
 with tab3:
+    st.subheader("Distribution of car Prices")
+    fig = px.histogram(filtered_df, x="price", nbins=50, title="Price Distribution")
+    st.plotly_chart(fig, use_container_width=True)
+
+with tab3:
     st.subheader("Raw Data Table")
     st.dataframe(filtered_df)
