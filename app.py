@@ -37,7 +37,6 @@ with tab2:
     fig = px.scatter(filtered_df, x="odometer", y="price", color="condition", title="Price vs Odometer")
     st.plotly_chart(fig, use_container_width=True)
 
-with tab3:
     st.subheader("Distribution of car Prices")
     fig = px.histogram(filtered_df, x="price", nbins=50, title="Price Distribution")
     st.plotly_chart(fig, use_container_width=True)
